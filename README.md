@@ -1,2 +1,2 @@
-# bootstrap_rse_demo
+# bootstrap_demo
 login; modal; table useage
