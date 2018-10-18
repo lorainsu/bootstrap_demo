@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign In</title>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/login.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div id="login_page" class="form row" style="margin-top: 250px; margin-left: 150px">
+            <div class="form-horizontal col-md-offset-3" id="login_div">
+                <form id="login_form" role="form" onsubmit="return false" action="##" method="post" style="margin-top: 20px">
+                    <div class="form-group">
+                        <img src="res/logo.png" class="img-rounded pull-left" style="margin-left: 45px; width: 60px;">
+                        <span class="label" style="font-size: 32px">RSE</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control required" type="text" placeholder="Username" id="username" name="username" autofocus="autofocus"
+                            style="width: 250px; font-size: 16px; margin-top: 15px">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control required" type="password" placeholder="Password" id="password" name="password"
+                            style="width: 250px; font-size: 16px" />
+                    </div>
+					<div class="form-group">
+                        <input class="form-control required" type="text" placeholder="APIG IP:Port" id="apighost" name="apighost"
+                            style="width: 250px; font-size: 16px" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success form-control pull-left" onclick="login()" type="submit" style="width: 100px; font-size: 16px">Sign
+                            in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
